@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  background-image: url("asset/backImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  height: auto;
+  width: auto;
+}
+.displayMaze {
+  display: grid;
+  gap: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.brick {
+  background-color: black;
+  width: 32px;
+  height: 32px;
+}
+
+.brick:hover {
+  cursor: pointer;
+}
+.wall {
+  display: block;
+  background-image: url("/asset/closeWall2.jpg");
+
+  background-size: cover;
+  background-color: black;
+}
+
+.openWall {
+  background-color: transparent;
+  background-color: rgb(182, 22, 22);
+
+  border: none;
+  outline: none;
+}
+button:hover {
+  background-color: gray;
+}
+.options {
+  position: relative;
+  border: 1px solid gray;
+  display: flex;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.options_presets {
+  flex: 1;
+}
+.options_presets button {
+  min-width: 100px;
+  height: 50px;
+}
+
+.DFS {
+  min-width: 100px;
+  height: 50px;
+}
