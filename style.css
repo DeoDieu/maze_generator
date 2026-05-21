@@ -40,7 +40,7 @@ body {
 }
 .wall {
   display: block;
-  background-image: url("/asset/closeWall2.jpg");
+  background-image: url("asset/closeWall2.jpg");
 
   background-size: cover;
   background-color: black;
